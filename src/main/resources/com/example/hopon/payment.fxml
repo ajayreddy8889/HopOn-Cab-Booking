@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1542.0" stylesheets="@signinstyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopon.paymentcontroller">
+    <children>
+        <!-- Header Section with Pale Yellow Background -->
+        <AnchorPane layoutY="0" prefHeight="82.0" prefWidth="1552.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="708.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="HopOn" textFill="WHITE" />
+                <Button alignment="TOP_RIGHT" layoutX="1362.0" layoutY="28.0" mnemonicParsing="false" text="Sign in for driver" />
+                <Button alignment="TOP_RIGHT" layoutX="1212.0" layoutY="28.0" mnemonicParsing="false" text="Sign in for user" />
+            </children>
+        </AnchorPane>
+
+        <!-- Footer Section with Pale Yellow Background -->
+        <AnchorPane layoutY="707.0" prefHeight="109.0" prefWidth="1554.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="361.0" layoutY="39.0" text="Download on" textFill="WHITE" />
+                <Button layoutX="511.0" layoutY="39.0" mnemonicParsing="false" text="Playstore" />
+                <Button layoutX="627.0" layoutY="39.0" mnemonicParsing="false" text="App store" />
+
+                <Label layoutX="738.0" layoutY="39.0" text="Terms and conditions" textFill="WHITE" />
+
+                <Label layoutX="935.0" layoutY="39.0" text="Follow us on" textFill="WHITE" />
+                <Button layoutX="1065.0" layoutY="39.0" mnemonicParsing="false" text="F" />
+                <Button layoutX="1135.0" layoutY="39.0" mnemonicParsing="false" text="I" />
+                <Button layoutX="1205.0" layoutY="39.0" mnemonicParsing="false" text="W" />
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+      <SplitPane dividerPositions="0.42829255596043725" layoutX="2.0" layoutY="83.0" prefHeight="625.0" prefWidth="1538.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="624.0" prefWidth="718.0">
+               <children>
+                  <Pane layoutX="101.0" layoutY="70.0" prefHeight="477.0" prefWidth="452.0" style="-fx-background-radius: 15; -fx-background-color: #E5E5E5;" />
+                  <Button fx:id="upibutton" layoutX="168.0" layoutY="210.0" mnemonicParsing="false" onAction="#upi" prefHeight="34.0" prefWidth="314.0" style="-fx-font-size: 18; -fx-border-color: #F6C13C; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="UPI Payment" />
+                  <Button fx:id="netbankingbutton" layoutX="169.0" layoutY="318.0" mnemonicParsing="false" onAction="#net" prefHeight="34.0" prefWidth="313.0" style="-fx-font-size: 18; -fx-border-color: #F6C13C; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="Net-Banking" />
+                  <Button fx:id="cardpaymentbutton" layoutX="171.0" layoutY="420.0" mnemonicParsing="false" onAction="#card" prefHeight="34.0" prefWidth="306.0" style="-fx-font-size: 18; -fx-border-color: #F6C13C; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="Card Payment" />
+                  <Label layoutX="110.0" layoutY="103.0" style="-fx-font-weight: bold; -fx-font-size: 25;" text="Choose your method for  payment" />
+                  <ImageView fitHeight="34.0" fitWidth="42.0" layoutX="210.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/online-payment_6384928.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="37.0" layoutX="209.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/online-banking_6439385.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="37.0" layoutX="208.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/payment-method_6296699.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane fx:id="cardpayment" layoutX="11.0" layoutY="10.0" prefHeight="624.0" prefWidth="876.0" visible="false">
+                     <children>
+                         <Pane layoutX="130.0" layoutY="50.0" prefHeight="500.0" prefWidth="650.0" style="-fx-background-radius: 15; -fx-background-color: #E5E5E5;">
+                           <children>
+                               <ImageView fitHeight="41.0" fitWidth="33.0" layoutX="424.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                   <image>
+                                       <Image url="@../../../image/payment-method_6296699.png" />
+                                   </image>
+                               </ImageView>
+                           </children></Pane>
+                         <Label layoutX="361.0" layoutY="57.0" style="-fx-font-weight: bold; -fx-font-size: 25;" text="Card Payment" />
+                        <Label layoutX="190.0" layoutY="187.0" text="Card Number:" />
+                        <Label layoutX="189.0" layoutY="239.0" text="Card Holder:" />
+                        <Label layoutX="189.0" layoutY="290.0" text="CVV:" />
+                        <Label layoutX="189.0" layoutY="340.0" text="Expiry Date:" />
+                        <Label layoutX="189.0" layoutY="392.0" text="Amount to be paid:" />
+                        <Label layoutX="170.0" layoutY="116.0" text="Please enter your card details and confirm the amount to be paid" />
+                        <Button fx:id="cardpaymentconfirmbutton" layoutX="303.0" layoutY="474.0" mnemonicParsing="false" onAction="#b1" prefHeight="34.0" prefWidth="314.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #F6C13C; -fx-border-width: 2; -fx-font-size: 15;" text="Confirm and Pay" />
+                        <TextField layoutX="395.0" layoutY="194.0" prefHeight="34.0" prefWidth="314.0" />
+                        <TextField layoutX="395.0" layoutY="246.0" prefHeight="34.0" prefWidth="314.0" />
+                        <TextField layoutX="395.0" layoutY="344.0" prefHeight="34.0" prefWidth="314.0" />
+                        <TextField layoutX="395.0" layoutY="394.0" prefHeight="34.0" prefWidth="314.0" />
+                        <PasswordField layoutX="395.0" layoutY="297.0" prefHeight="33.0" prefWidth="314.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="netbanking" layoutX="180.0" layoutY="67.0" visible="false">
+                     <children>
+                         <Pane layoutX="-18.0" layoutY="-10.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-radius: 15; -fx-background-color: #E5E5E5;">
+                           <children>
+                               <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="392.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                   <image>
+                                       <Image url="@../../../image/online-banking_6439385.png" />
+                                   </image>
+                               </ImageView>
+                           </children></Pane>
+                         <Label layoutX="204.0" style="-fx-font-weight: bold; -fx-font-size: 25;" text="Net-Banking" />
+                        <Label layoutX="20.0" layoutY="130.0" text="Account Number :" />
+                        <Label layoutX="19.0" layoutY="192.0" text="IFSC Code :" />
+                        <Label layoutX="19.0" layoutY="253.0" text="Branch Name:" />
+                        <Label layoutX="19.0" layoutY="313.0" text="Amount to be paid:" />
+                        <TextField layoutX="225.0" layoutY="257.0" prefHeight="34.0" prefWidth="314.0" />
+                        <Label layoutY="69.0" text="Please enter your account details and confirm amount to be paid" />
+                        <Button fx:id="netbankingconfirmbutton" layoutX="133.0" layoutY="407.0" mnemonicParsing="false" onAction="#b2" prefHeight="34.0" prefWidth="314.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #F6C13C; -fx-border-width: 2; -fx-font-size: 15;" text="Confirm and Pay" />
+                        <TextField layoutX="225.0" layoutY="317.0" prefHeight="34.0" prefWidth="314.0" />
+                        <TextField layoutX="225.0" layoutY="197.0" prefHeight="34.0" prefWidth="314.0" />
+                        <TextField layoutX="225.0" layoutY="137.0" prefHeight="34.0" prefWidth="314.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="upipayment" layoutX="199.0" layoutY="87.0" visible="false">
+                     <children>
+                         <Pane layoutX="-27.0" layoutY="-17.0" prefHeight="490.0" prefWidth="590.0" style="-fx-background-radius: 15; -fx-background-color: #E5E5E5;">
+                           <children>
+                               <ImageView fitHeight="34.0" fitWidth="42.0" layoutX="386.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                   <image>
+                                       <Image url="@../../../image/online-payment_6384928.png" />
+                                   </image>
+                               </ImageView>
+                           </children></Pane>
+                         <Label layoutX="182.0" style="-fx-font-weight: bold; -fx-font-size: 25;" text="UPI Payment" />
+                        <Label layoutX="1.0" layoutY="160.0" text="UPI ID:" />
+                        <Label layoutY="232.0" text="Amount to be paid:" />
+                        <PasswordField layoutX="207.0" layoutY="167.0" prefHeight="33.0" prefWidth="314.0" />
+                        <Label layoutX="1.0" layoutY="89.0" text="Please enter your UPI ID and confirm the amount to be paid" />
+                        <Button fx:id="upiconfirmbutton" layoutX="120.0" layoutY="317.0" mnemonicParsing="false" onAction="#b3" prefHeight="34.0" prefWidth="314.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #F6C13C; -fx-border-width: 2; -fx-font-size: 15;" text="Confirm and Pay" />
+                        <TextField layoutX="208.0" layoutY="237.0" prefHeight="33.0" prefWidth="314.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>

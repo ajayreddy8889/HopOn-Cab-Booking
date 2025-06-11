@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="868.0" prefWidth="1542.0" stylesheets="@signinstyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopon.driveroptionscontroller">
+    <children>
+        <AnchorPane layoutX="0" prefHeight="82.0" prefWidth="1552.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="708.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="HopOn" textFill="WHITE" />
+                <Button fx:id="signinforusertopbutton" alignment="TOP_RIGHT" layoutX="1369.0" layoutY="28.0" mnemonicParsing="false" onAction="#logoutclick" text="Logout" />
+                <Button layoutX="52.0" layoutY="28.0" mnemonicParsing="false" onAction="#aboutusclick" text="About Us">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="contactus" layoutX="185.0" layoutY="28.0" mnemonicParsing="false" onAction="#contactusclick" text="Contact Us">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="707.0" prefHeight="178.0" prefWidth="1559.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="53.0" layoutY="43.0" text="Download on" textFill="WHITE" />
+                <Button layoutX="179.0" layoutY="47.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="83.0" style="-fx-background-color: black;" />
+                <Button layoutX="277.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: black;" />
+                <Label layoutX="691.0" layoutY="36.0" text="Terms and conditions" textFill="WHITE" />
+                <Label layoutX="1198.0" layoutY="38.0" text="Follow us on" textFill="WHITE" />
+                <Button layoutX="1323.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                <Button layoutX="1396.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                <Button layoutX="1466.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="1322.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/facebook-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="1396.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/instagram-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="1466.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/whatsapp-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="129.0" fitWidth="101.0" layoutX="179.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/playstore-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="33.0" fitWidth="101.0" layoutX="277.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/Download_on_the_App_Store_Badge.svg-removebg-preview.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+        <SplitPane dividerPositions="0.18623112961998955" layoutX="2.0" layoutY="83.0" prefHeight="625.0" prefWidth="1538.0">
+            <items>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="642.0" prefWidth="380.0">
+                    <children>
+                        <Pane layoutX="-6.0" prefHeight="647.0" prefWidth="362.0" style="-fx-background-radius: 15; -fx-background-color: #E5E5E5;" />
+                        <Button fx:id="ridehistorybutton" layoutX="20.0" layoutY="416.0" mnemonicParsing="false" onAction="#ridehistorybuttonclick" prefHeight="50.0" prefWidth="245.0" style="-fx-font-size: 18; -fx-border-color: #F6C13C; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="Ride History" />
+                        <Button fx:id="bookridebutton" layoutX="18.0" layoutY="214.0" mnemonicParsing="false" onAction="#acceptridebuttonclick" prefHeight="50.0" prefWidth="249.0" style="-fx-font-size: 18; -fx-border-color: #F6C13C; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="Accept Ride" />
+                        <Button fx:id="currentridebutton" layoutX="15.0" layoutY="321.0" mnemonicParsing="false" onAction="#currentridebuttonclick" prefHeight="50.0" prefWidth="250.0" style="-fx-font-size: 18; -fx-border-color: #F6C13C; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="Current Ride" />
+                        <ImageView fitHeight="34.0" fitWidth="42.0" layoutX="60.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../image/online-payment_6384928.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="37.0" layoutX="57.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../image/online-banking_6439385.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="37.0" layoutX="55.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../image/payment-method_6296699.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <AnchorPane fx:id="acceptridepane" layoutX="23.0" layoutY="30.0" prefWidth="1137.0">
+                            <children>
+                                <ImageView fitHeight="647.0" fitWidth="1272.0" layoutX="-32.0" layoutY="-36.0" pickOnBounds="true">
+                                    <image>
+                                        <Image url="@../../../image/bookridebackground.jpg" />
+                                    </image>
+                                </ImageView>
+                        <Pane layoutX="308.0" layoutY="34.0" prefHeight="472.0" prefWidth="576.0" style="-fx-background-color: #f1efef; -fx-border-radius: 15; -fx-border-color: #F6C13C; -fx-border-width: 2; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, grey, 9,0.5, 5, 5);">
+                           <children>
+                              <Label alignment="TOP_CENTER" layoutX="198.0" layoutY="3.0" style="-fx-font-size: 29PX; -fx-font-weight: BOLD;" text="Accept ride" />
+                              <Label alignment="TOP_CENTER" layoutX="53.0" layoutY="90.0" text="Name :" />
+                              <Label alignment="TOP_CENTER" layoutX="53.0" layoutY="140.0" text="Phone Number :" />
+                              <Label alignment="TOP_CENTER" layoutX="53.0" layoutY="190.0" text="E-mail :" />
+                              <Label alignment="TOP_CENTER" layoutX="53.0" layoutY="240.0" text="Pick up Location :" />
+                              <Label alignment="TOP_CENTER" layoutX="53.0" layoutY="290.0" text="Drop off Location :" />
+                              <Label alignment="TOP_CENTER" layoutX="53.0" layoutY="340.0" text="Pick up time :" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="405.0" mnemonicParsing="false" onAction="#onacceptclick" prefHeight="42.0" prefWidth="267.0" style="-fx-font-size: 15; -fx-border-radius: 10; -fx-border-color: #F6C13C; -fx-border-width: 2; -fx-background-radius: 10;" text="Accept Ride" textAlignment="CENTER" />
+                              <Label fx:id="acceptname" layoutX="369.0" layoutY="92.0" text="name" />
+                              <Label fx:id="acceptphone" layoutX="371.0" layoutY="142.0" text="Phone" />
+                              <Label fx:id="acceptmail" layoutX="374.0" layoutY="192.0" text="Mail" />
+                              <Label fx:id="accepttime" layoutX="377.0" layoutY="342.0" text="Time" />
+                              <Label fx:id="acceptdropoff" layoutX="372.0" layoutY="292.0" text="DropOff" />
+                              <Label fx:id="acceptpickup" layoutX="372.0" layoutY="241.0" text="Pickup" />
+                           </children>
+                        </Pane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="currentridepane" layoutX="-4.0" layoutY="-1.0" prefHeight="635.0" prefWidth="1165.0" visible="false">
+                            <children>
+                                <ImageView fitHeight="643.0" fitWidth="1269.0" layoutX="2.0" pickOnBounds="true">
+                                    <image>
+                                        <Image url="@../../../image/cityimage.jpg" />
+                                    </image>
+                                </ImageView>
+                                <Pane layoutX="319.0" layoutY="90.0" prefHeight="418.0" prefWidth="582.0" style="-fx-background-color: #f1efef; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, grey, 9,0.5, 5, 5);">
+                                    <children>
+                                        <Label alignment="TOP_CENTER" layoutX="248.0" layoutY="8.0" style="-fx-font-size: 23px; -fx-font-weight: bold;" text="Current ride" />
+                                        <Label alignment="TOP_CENTER" layoutX="16.0" layoutY="72.0" text="Passenger name:" />
+                                        <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="122.0" text="Phone Number :" />
+                                        <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="178.0" text="Pick up Location :" />
+                                        <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="228.0" text="Drop off Location :" />
+                                        <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="278.0" text="Pick up time :" />
+                                        <Button fx:id="cancelbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="344.0" mnemonicParsing="false" onAction="#finishbuttonclick" prefHeight="37.0" prefWidth="522.0" style="-fx-font-size: 15;" text="Finish Ride" textAlignment="CENTER" />
+                              <Label fx:id="currname" alignment="TOP_CENTER" layoutX="273.0" layoutY="72.0" text="Name" />
+                              <Label fx:id="currnum" alignment="TOP_CENTER" layoutX="273.0" layoutY="122.0" text="Number" />
+                              <Label fx:id="currpick" alignment="TOP_CENTER" layoutX="273.0" layoutY="178.0" text="Pick up Location" />
+                              <Label fx:id="currdrop" alignment="TOP_CENTER" layoutX="273.0" layoutY="228.0" text="Drop Off Location" />
+                              <Label fx:id="currtime" alignment="TOP_CENTER" layoutX="273.0" layoutY="278.0" text="Time" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="cancelpopup" layoutX="440.0" layoutY="280.0" prefHeight="87.0" prefWidth="302.0" style="-fx-background-color: #fefefe; -fx-border-color: grey;" visible="false">
+                                    <children>
+                                        <Button fx:id="yesbutton" layoutX="71.0" layoutY="45.0" mnemonicParsing="false" onAction="#yesclicked" prefHeight="35.0" prefWidth="52.0" text="Yes" />
+                                        <Label layoutX="69.0" layoutY="3.0" text="Confirm Cancel" textFill="#302e2e" />
+                                        <Button fx:id="nobutton" layoutX="153.0" layoutY="46.0" mnemonicParsing="false" onAction="#noclicked" prefHeight="33.0" prefWidth="58.0" text="No" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="ridehistorypane" layoutX="-1.0" layoutY="-7.0" prefHeight="648.0" prefWidth="1263.0" visible="false">
+                            <children>
+                        <ImageView fitHeight="641.0" fitWidth="1259.0" layoutX="6.0" layoutY="6.0" opacity="0.8" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../image/ridehistoryimage.jpg" />
+                           </image>
+                        </ImageView>
+                                <TableView fx:id="driveTable" layoutX="176.0" layoutY="208.0" prefHeight="234.0" prefWidth="874.0" style="-fx-border-color: #F6C13C;">
+                                    <columns>
+                                        <TableColumn fx:id="rideIdCol" prefWidth="101.5999755859375" text="Rideno." />
+                                        <TableColumn fx:id="riderNameCol" prefWidth="197.59996032714844" text="Passenger name" />
+                                        <TableColumn fx:id="pickupCol" minWidth="0.0" prefWidth="188.79991149902344" text="Pickup location" />
+                                        <TableColumn fx:id="dropCol" prefWidth="178.400146484375" text="Dropoff location" />
+                                        <TableColumn fx:id="passengerCol" prefWidth="188.7999267578125" text="No.of passengers" />
+                                    </columns>
+                                </TableView>
+                                <Label layoutX="463.0" layoutY="76.0" prefHeight="75.0" prefWidth="354.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="Driver Ride History" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

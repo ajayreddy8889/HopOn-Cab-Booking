@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="alreadysigninlabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2889.0" prefWidth="1594.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopon.HelloController">
+    <children>
+        <!-- Header Section with Pale Yellow Background -->
+        <AnchorPane layoutX="0" prefHeight="82.0" prefWidth="1552.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="708.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="HopOn" textFill="WHITE" />
+                <Button fx:id="signinfordrivertopbutton" alignment="TOP_RIGHT" layoutX="1362.0" layoutY="28.0" mnemonicParsing="false" onAction="#signindriverclick" text="Sign in for driver" />
+                <Button fx:id="signinforusertopbutton" alignment="TOP_RIGHT" layoutX="1212.0" layoutY="28.0" mnemonicParsing="false" onAction="#signinuserclick" text="Sign in for user" />
+                <Button layoutX="52.0" layoutY="28.0" mnemonicParsing="false" onAction="#aboutusclick" text="About Us">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="contactus" layoutX="185.0" layoutY="28.0" mnemonicParsing="false" onAction="#contactusclick" text="Contact Us">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <ScrollPane layoutX="-4.0" layoutY="75.0" prefHeight="858.0" prefWidth="1602.0">
+            <content>
+                <AnchorPane prefHeight="2859.0" prefWidth="1624.0">
+                    <children>
+                        <Label id="alreadysigninlabel" fx:id="alreadysigninlabel" layoutX="532.0" layoutY="1418.0" />
+
+                        <!-- Footer Section with Pale Yellow Background -->
+                        <AnchorPane layoutX="1.0" layoutY="2584.0" prefHeight="199.0" prefWidth="1559.0" style="-fx-background-color: #000000;">
+                            <children>
+                                <Label alignment="CENTER" layoutX="65.0" layoutY="43.0" text="Download on" textFill="WHITE" />
+                                <Button layoutX="160.0" layoutY="37.0" mnemonicParsing="false" text="Playstore" />
+                                <Button layoutX="248.0" layoutY="36.0" mnemonicParsing="false" text="App store" />
+
+                                <Label layoutX="691.0" layoutY="36.0" text="Terms and conditions" textFill="WHITE" />
+
+                                <Label layoutX="1199.0" layoutY="41.0" text="Follow us on" textFill="WHITE" />
+                                <Button layoutX="1323.0" layoutY="39.0" mnemonicParsing="false" text="F" />
+                                <Button layoutX="1396.0" layoutY="39.0" mnemonicParsing="false" text="I" />
+                                <Button layoutX="1466.0" layoutY="39.0" mnemonicParsing="false" text="W" />
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </AnchorPane>
+                  <ImageView fitHeight="1123.0" fitWidth="1574.0" layoutX="6.0" layoutY="2.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../image/freepik__candid-image-photography-natural-textures-highly-r__31982.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="168.0" layoutY="1247.0" text="1000+">
+                     <font>
+                        <Font name="System Bold" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="705.0" layoutY="1245.0" text="24/7">
+                     <font>
+                        <Font name="System Bold" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1184.0" layoutY="1245.0" text="5 Stars">
+                     <font>
+                        <Font name="System Bold" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="1339.0" text="Happy Journeys">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="622.0" layoutY="1339.0" text="Always available">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1054.0" layoutY="1335.0" text="Customer Satisfaction">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="428.0" layoutY="1528.0" text="Latest News and Updates">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Label>
+                  <ImageView blendMode="SRC_ATOP" fitHeight="150.0" fitWidth="200.0" layoutX="122.0" layoutY="1722.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/output.jpg" />
+                     </image>
+                     <effect>
+                        <Glow level="0.5" />
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="61.0" layoutY="1897.0" text="New Fleet of Luxury Cars">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="1928.0" text="November 1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="59.0" layoutY="1961.0" text="We just added a fleet of luxury cars! " textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="1987.0" text="Experience the ride of your life. Book now!">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="507.0" layoutY="1726.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/halo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="428.0" layoutY="1894.0" text="Halloween Special Discounts">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="431.0" layoutY="1932.0" text="October 31,2024">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="1963.0" text="Missed our Halloween deals? Don’t worry,">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="431.0" layoutY="1984.0" text=" we have spooky discounts all week!">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="877.0" layoutY="1738.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/eco_friendly.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="818.0" layoutY="1891.0" text="Introducing Eco-Friendly Rides">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="819.0" layoutY="1927.0" text="October 25, 2024">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="823.0" layoutY="1963.0" text="Go green with our new eco-friendly rides! ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="824.0" layoutY="1986.0" text="Save the planet while you travel.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1264.0" layoutY="1730.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="1197.0" layoutY="1890.0" text="Cabify Expands to New Cities">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1198.0" layoutY="1924.0" text="October 20, 2024">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1200.0" layoutY="1963.0" text="We’re growing! Cabify is now available in more cities.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1198.0" layoutY="1985.0" text=" Check if we’re in yours!">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="369.0" layoutY="2186.0" text="Who We Are">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <input>
+                              <Blend />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+                  <Label layoutX="839.0" layoutY="2121.0" text="At Hop On, we believe that every ride should be an adventure. ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="838.0" layoutY="2152.0" text="Our mission is to provide you with the most exhilarating " textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="839.0" layoutY="2181.0" text="cab experience possible.">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="840.0" layoutY="2239.0" text="With our fleet of stylish cars and professional drivers,">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="834.0" layoutY="2265.0" text=" we ensure that you arrive at your destination in comfort and ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="840.0" layoutY="2294.0" text="style. No more boring rides!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="838.0" layoutY="2355.0" text="Join the Hop On revolution today and discover why we’re the ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="838.0" layoutY="2389.0" text="talk of the town. Buckle up, it’s going to be a wild ride!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="319.0" layoutY="2503.0" text="Best cab service ever! Fast, friendly, and reliable!">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

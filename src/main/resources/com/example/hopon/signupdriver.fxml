@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="alreadysigninlabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="1546.0" stylesheets="@signupstyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopon.signupdrivercontroller">
+      <children>
+          <!-- Header Section with Pale Yellow Background -->
+          <AnchorPane layoutX="0" prefHeight="82.0" prefWidth="1552.0" style="-fx-background-color: #000000;">
+              <children>
+                  <Label alignment="CENTER" layoutX="708.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="HopOn" textFill="WHITE" />
+                  <Button fx:id="signinfordrivertopbutton" alignment="TOP_RIGHT" layoutX="1362.0" layoutY="28.0" mnemonicParsing="false" onAction="#signindriverclick" text="Sign in for driver" />
+                  <Button fx:id="signinforusertopbutton" alignment="TOP_RIGHT" layoutX="1212.0" layoutY="28.0" mnemonicParsing="false" onAction="#signinuserclick" text="Sign in for user" />
+                  <Button layoutX="52.0" layoutY="28.0" mnemonicParsing="false" onAction="#aboutusclick" text="About Us">
+                      <font>
+                          <Font size="12.0" />
+                      </font>
+                  </Button>
+                  <Button fx:id="contactus" layoutX="185.0" layoutY="28.0" mnemonicParsing="false" onAction="#contactusclick" text="Contact Us">
+                      <font>
+                          <Font size="12.0" />
+                      </font>
+                  </Button>
+              </children>
+          </AnchorPane>
+      <ScrollPane layoutX="-4.0" layoutY="75.0" prefHeight="716.0" prefWidth="1562.0">
+         <content>
+            <AnchorPane prefWidth="1560.0">
+               <children>
+                      <Pane layoutX="183.0" layoutY="842.0" prefHeight="660.0" prefWidth="683.0" style="-fx-background-color: #f1efef; -fx-background-radius: 25;-fx-effect: dropshadow(gaussian, grey, 5,0.5, 3, 3);">
+                     <children>
+                            <TextField fx:id="vno" alignment="TOP_LEFT" layoutX="218.0" layoutY="450.0" prefHeight="33.0" prefWidth="420.0" promptText="Vehicle Type:" />
+                            <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="448.0" text="Vehicle Type:" />
+                            <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="497.0" text="License Number:" />
+                            <TextField fx:id="lno" alignment="TOP_LEFT" layoutX="217.0" layoutY="502.0" prefHeight="33.0" prefWidth="420.0" promptText="License no:" />
+                            <Label alignment="TOP_CENTER" layoutX="23.0" layoutY="397.0" text="City:" />
+                  
+                            <Label alignment="TOP_CENTER" layoutX="17.0" layoutY="249.0" text="E-mail :" />
+                            <TextField fx:id="mail" alignment="TOP_LEFT" layoutX="217.0" layoutY="249.0" prefHeight="26.0" prefWidth="420.0" />
+                  
+                            <Label alignment="TOP_CENTER" layoutX="17.0" layoutY="299.0" text="Password:" />
+                  
+                            <Label alignment="TOP_CENTER" layoutX="17.0" layoutY="349.0" text="Confirm Password:" />
+                        <Label alignment="TOP_CENTER" layoutX="17.0" layoutY="199.0" text="Date of birth:" />
+                        <Label alignment="TOP_CENTER" layoutX="418.0" layoutY="199.0" text="Gender:" />
+                        <TextField fx:id="drivergender" layoutX="505.0" layoutY="206.0" prefHeight="33.0" prefWidth="132.0" />
+                        <TextField fx:id="driverdob" layoutX="218.0" layoutY="206.0" prefHeight="33.0" prefWidth="167.0" />
+                     </children></Pane>
+            
+                      <!-- Accept Ride Section -->
+                      <Label alignment="TOP_CENTER" layoutX="442.0" layoutY="863.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="Sign Up to Ride" />
+            
+                      <!-- Labels and corresponding TextFields aligned properly -->
+                      <Label alignment="TOP_CENTER" layoutX="202.0" layoutY="953.0" text="Name :" />
+                      <TextField fx:id="first_name" alignment="TOP_LEFT" layoutX="402.0" layoutY="953.0" prefHeight="26.0" prefWidth="200.0" promptText="First Name" />
+                      <TextField fx:id="last_name" alignment="TOP_LEFT" layoutX="622.0" layoutY="953.0" prefHeight="26.0" prefWidth="200.0" promptText="Last Name" />
+            
+                      <Label alignment="TOP_CENTER" layoutX="202.0" layoutY="1003.0" text="Phone Number :" />
+                      <TextField fx:id="number" alignment="TOP_LEFT" layoutX="402.0" layoutY="1003.0" prefHeight="33.0" prefWidth="196.0" />
+            
+                      <!-- Action Buttons -->
+                      <Button fx:id="alreadysigninbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="441.0" layoutY="1417.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="243.0" style="-fx-background-color: #f1efef; -fx-font-size: 18; -fx-font-style: Arial;" text="Sign In" textAlignment="CENTER" />
+            
+                      <Label alignment="TOP_CENTER" layoutX="204.0" layoutY="1439.0" style="-fx-font-size: 18;" text="Already have an account? Click here to " />
+                      <Button fx:id="signupbuttondriver" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="1403.0" mnemonicParsing="false" onAction="#signupdriverclick" prefHeight="34.0" prefWidth="612.0" text="Sign Up" textAlignment="CENTER" />
+                      <ImageView fitHeight="625.0" fitWidth="497.0" layoutX="909.0" layoutY="868.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../../../image/freepik__candid-image-photography-natural-textures-highly-r__17898.jpeg" />
+                          </image>
+                      </ImageView>
+                      <PasswordField fx:id="pass1" layoutX="403.0" layoutY="1143.0" prefHeight="33.0" prefWidth="417.0" />
+                      <PasswordField fx:id="pass2" layoutX="403.0" layoutY="1193.0" prefHeight="33.0" prefWidth="417.0" />
+                      <Label id="alreadysigninlabel" fx:id="alreadysigninlabel" layoutX="532.0" layoutY="1438.0" text="Sign In" />
+                      <Line endX="1331.199951171875" layoutX="205.74996948242188" layoutY="1614.75" startX="-216.00003051757812" strokeWidth="2.5" />
+                      <Label layoutX="614.0" layoutY="1650.0" style="-fx-font-size: 35px; -fx-font-weight: bold;" text="Why Drive With Us">
+                          <font>
+                              <Font size="8.0" />
+                          </font>
+                      </Label>
+                      <ImageView fitHeight="141.0" fitWidth="140.0" layoutX="247.0" layoutY="2178.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../../../image/cash_icon-removebg-preview.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView fitHeight="140.0" fitWidth="130.0" layoutX="750.0" layoutY="2175.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../../../image/settime-removebg-preview.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView fitHeight="108.0" fitWidth="201.0" layoutX="1171.0" layoutY="2197.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../../../image/png-transparent-person-with-headset-art-computer-icons-customer-service-technical-support-call-center-miscellaneous-computer-network-service-removebg-preview.png" />
+                          </image>
+                      </ImageView>
+                      <Label layoutX="241.0" layoutY="2369.0" text="Weekly payouts" />
+                      <Label layoutX="715.0" layoutY="2368.0" text="Set your own hours" />
+                      <Label layoutX="1152.0" layoutY="2368.0" text="Get support at every turn" />
+                      <Label layoutX="149.0" style="-fx-font-size: 25; -fx-font-weight: bold; -fx-font-family: Times New Roman;" text="Drive" />
+                      <ImageView fitHeight="312.0" fitWidth="1406.0" layoutX="131.0" layoutY="1764.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../../../image/whyDriveWithUs_desktop_(1).png" />
+                          </image>
+                      </ImageView>
+                      <Label layoutX="114.0" layoutY="2401.0" text="Regular weekly deposits straight to your account" />
+                      <Label layoutX="621.0" layoutY="2401.0" text="You decide when and how often you drive" />
+                      <Label layoutX="1032.0" layoutY="2402.0" text="Support team is available around the clock to assist " />
+            
+                      <!-- Footer Section with Pale Yellow Background -->
+                   <AnchorPane layoutX="1.0" layoutY="2584.0" prefHeight="151.0" prefWidth="1559.0" style="-fx-background-color: #000000;">
+                       <children>
+                           <Label alignment="CENTER" layoutX="53.0" layoutY="43.0" text="Download on" textFill="WHITE" />
+                           <Button layoutX="179.0" layoutY="47.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="83.0" style="-fx-background-color: black;" />
+                           <Button layoutX="277.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: black;" />
+
+                           <Label layoutX="691.0" layoutY="36.0" text="Terms and conditions" textFill="WHITE" />
+
+                           <Label layoutX="1198.0" layoutY="38.0" text="Follow us on" textFill="WHITE" />
+                           <Button layoutX="1323.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                           <Button layoutX="1396.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                           <Button layoutX="1466.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                           <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="1322.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                               <image>
+                                   <Image url="@../../../image/facebook-removebg-preview.png" />
+                               </image>
+                           </ImageView>
+                           <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="1396.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                               <image>
+                                   <Image url="@../../../image/instagram-removebg-preview.png" />
+                               </image>
+                           </ImageView>
+                           <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="1466.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                               <image>
+                                   <Image url="@../../../image/whatsapp-removebg-preview.png" />
+                               </image>
+                           </ImageView>
+                           <ImageView fitHeight="129.0" fitWidth="101.0" layoutX="179.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                               <image>
+                                   <Image url="@../../../image/playstore-removebg-preview.png" />
+                               </image>
+                           </ImageView>
+                           <ImageView fitHeight="33.0" fitWidth="101.0" layoutX="277.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                               <image>
+                                   <Image url="@../../../image/Download_on_the_App_Store_Badge.svg-removebg-preview.png" />
+                               </image>
+                           </ImageView>
+                       </children>
+                       <opaqueInsets>
+                           <Insets />
+                       </opaqueInsets>
+                   </AnchorPane>
+                      <AnchorPane layoutY="50.0" prefHeight="660.0" prefWidth="1552.0" style="-fx-background-color: #292929;">
+                          <children>
+                              <Label layoutX="199.0" layoutY="143.0" style="-fx-font-size: 65; -fx-font-weight: bold;" text="Earn when you" textFill="#f2dab5" />
+                              <Label layoutX="198.0" layoutY="238.0" style="-fx-font-size: 65; -fx-font-weight: bold;" text="want, make what" textFill="#f2dab5" />
+                              <Label layoutX="201.0" layoutY="324.0" style="-fx-font-size: 65; -fx-font-weight: bold;" text="you need" textFill="#f2dab5" />
+                              <Label layoutX="195.0" layoutY="437.0" style="-fx-font-weight: bold; -fx-font-size: 40;" text="Earn at your own schedule" textFill="WHITE" />
+                              <ImageView fitHeight="597.0" fitWidth="635.0" layoutX="902.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../../../image/illustration-drive_page.png" />
+                                  </image>
+                              </ImageView>
+                          </children>
+                      </AnchorPane>
+                  <TextField fx:id="city" alignment="TOP_LEFT" layoutX="401.0" layoutY="1243.0" prefHeight="26.0" prefWidth="420.0" />
+                  <Label fx:id="cred" layoutX="669.0" layoutY="1109.0" prefHeight="45.0" prefWidth="194.0" style="-fx-font-size: 15px;" text="Email Already Exists" textFill="RED" visible="false">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="riderage" layoutX="677.0" layoutY="1003.0" prefHeight="33.0" prefWidth="142.0" />
+                  <Label alignment="TOP_CENTER" layoutX="616.0" layoutY="998.0" text="Age:" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      </children>
+  </AnchorPane>

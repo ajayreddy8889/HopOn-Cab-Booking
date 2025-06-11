@@ -1,0 +1,40 @@
+/*.root {
+     -fx-background-color: #ffffff;
+ }*/
+
+
+ .label {
+     -fx-font-family: "Arial";
+     -fx-font-size: 19px;
+     -fx-label-padding: 10px;
+ }
+#signinpane{
+     border-radius: 50;
+}
+
+ .text-field {
+     -fx-background-radius: 5;
+     /*-fx-border-color: #FFD700;*/
+     -fx-border-color: #000000;
+     -fx-border-radius: 5;
+     -fx-padding: 5px;
+     -fx-font-size: 14px;
+     -fx-background-color: #ffffff;
+ }
+
+
+ .button {
+     -fx-background-color: #FFFFE0;
+     -fx-text-fill: #000000;
+     -fx-font-weight: bold;
+     -fx-background-radius: 5;
+     -fx-padding: 8px 15px;
+ }
+
+ .button:hover {
+     -fx-background-color: #FFC300;
+ }
+
+ .button:pressed {
+     -fx-background-color: #FFB300;
+ }

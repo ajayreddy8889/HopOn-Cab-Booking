@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1542.0" stylesheets="@signinstyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopon.signinridercontroller">
+    <children>
+      <Pane id="signinpane" fx:id="signinpane" layoutX="162.0" layoutY="156.0" prefHeight="451.0" prefWidth="555.0" style="-fx-background-color: #f1efef; -fx-background-radius: 25;-fx-effect: dropshadow(gaussian, grey, 9,0.5, 5, 5);">
+         <children>
+            <Label fx:id="cred" alignment="TOP_LEFT" layoutX="351.0" layoutY="281.0" prefHeight="48.0" prefWidth="190.0" text="Wrong credentials." textAlignment="JUSTIFY" textFill="RED" visible="false" wrapText="true">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+         </children></Pane>
+        <!-- Header Section with Pale Yellow Background -->
+        <AnchorPane layoutX="0" prefHeight="82.0" prefWidth="1552.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="708.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="HopOn" textFill="WHITE" />
+                <Button fx:id="signinfordrivertopbutton" alignment="TOP_RIGHT" layoutX="1362.0" layoutY="28.0" mnemonicParsing="false" onAction="#signindriverclick" text="Sign in for driver" />
+                <Button fx:id="signinforusertopbutton" alignment="TOP_RIGHT" layoutX="1212.0" layoutY="28.0" mnemonicParsing="false" onAction="#signinuserclick" text="Sign in for user" />
+                <Button layoutX="52.0" layoutY="28.0" mnemonicParsing="false" onAction="#aboutusclick" text="About Us">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="contactus" layoutX="185.0" layoutY="28.0" mnemonicParsing="false" onAction="#contactusclick" text="Contact Us">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+
+        <!-- Accept Ride Section -->
+        <Label alignment="TOP_CENTER" layoutX="337.0" layoutY="177.0" style="-fx-font-size: 30px;" text="Sign In to Ride" textFill="#000000de">
+            <!--<font>
+                <Font size="Infinity"/>
+            </font>-->
+        </Label>
+
+        <Label alignment="TOP_CENTER" layoutX="229.0" layoutY="254.0" text="E-mail :" />
+        <TextField fx:id="mail" alignment="TOP_LEFT" layoutX="224.0" layoutY="307.0" prefHeight="26.0" prefWidth="420.0" />
+
+        <Label alignment="TOP_CENTER" layoutX="223.0" layoutY="362.0" text="Password" />
+
+        <Label alignment="TOP_CENTER" layoutX="223.0" layoutY="460.0" text="Don't have an account?Click to signup" />
+
+        <!-- Action Buttons -->
+        <Button fx:id="signupbuttonrider" alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="538.0" mnemonicParsing="false" onAction="#btt" prefHeight="34.0" prefWidth="241.0" text="Sign Up" textAlignment="CENTER" />
+        <Button fx:id="signinbuttonrider" alignment="CENTER" contentDisplay="CENTER" layoutX="453.0" layoutY="539.0" mnemonicParsing="false" onAction="#signinbuttonclick" prefHeight="34.0" prefWidth="244.0" text="Sign In" textAlignment="CENTER" />
+
+        <!-- Footer Section with Pale Yellow Background -->
+        <AnchorPane layoutY="685.0" prefHeight="131.0" prefWidth="1553.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="361.0" layoutY="39.0" text="Download on" textFill="WHITE" />
+                <Button layoutX="511.0" layoutY="39.0" mnemonicParsing="false" text="Playstore" />
+                <Button layoutX="627.0" layoutY="39.0" mnemonicParsing="false" text="App store" />
+
+                <Label layoutX="738.0" layoutY="39.0" text="Terms and conditions" textFill="WHITE" />
+
+                <Label layoutX="935.0" layoutY="39.0" text="Follow us on" textFill="WHITE" />
+                <Button layoutX="1065.0" layoutY="39.0" mnemonicParsing="false" text="F" />
+                <Button layoutX="1135.0" layoutY="39.0" mnemonicParsing="false" text="I" />
+                <Button layoutX="1205.0" layoutY="39.0" mnemonicParsing="false" text="W" />
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+      <PasswordField fx:id="pass" layoutX="221.0" layoutY="413.0" prefHeight="34.0" prefWidth="419.0" />
+      <ImageView fitHeight="604.0" fitWidth="603.0" layoutX="811.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/signin2images.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

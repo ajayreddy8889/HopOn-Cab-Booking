@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="profileanchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="798.0" prefWidth="1552.0" stylesheets="@signinstyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopon.admincontroller">
+    <children>
+        <ImageView fitHeight="605.0" fitWidth="1562.0" layoutX="-3.0" layoutY="80.0" opacity="0.68" pickOnBounds="true">
+            <image>
+                <Image url="@../../../image/cityimage.jpg" />
+            </image>
+        </ImageView>
+        <!-- Header Section with Pale Yellow Background -->
+        <AnchorPane layoutX="0" prefHeight="82.0" prefWidth="1552.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="708.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="HopOn" textFill="WHITE" />
+                <Button fx:id="logoutbutton" alignment="TOP_RIGHT" layoutX="1362.0" layoutY="28.0" mnemonicParsing="false" onAction="#logoutclick" text="Logout" />
+                <Button layoutX="52.0" layoutY="28.0" mnemonicParsing="false" onAction="#aboutusclick" text="About Us">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="contactus" layoutX="185.0" layoutY="28.0" mnemonicParsing="false" onAction="#contactusclick" text="Contact Us">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+
+        <!-- Footer Section with Pale Yellow Background -->
+        <AnchorPane layoutX="1.0" layoutY="685.0" prefHeight="115.0" prefWidth="1559.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label alignment="CENTER" layoutX="53.0" layoutY="43.0" text="Download on" textFill="WHITE" />
+                <Button layoutX="179.0" layoutY="47.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="83.0" style="-fx-background-color: black;" />
+                <Button layoutX="277.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: black;" />
+
+                <Label layoutX="691.0" layoutY="36.0" text="Terms and conditions" textFill="WHITE" />
+
+                <Label layoutX="1198.0" layoutY="38.0" text="Follow us on" textFill="WHITE" />
+                <Button layoutX="1323.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                <Button layoutX="1396.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                <Button layoutX="1466.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+                <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="1322.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/facebook-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="1396.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/instagram-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="1466.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/whatsapp-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="129.0" fitWidth="101.0" layoutX="179.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/playstore-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="33.0" fitWidth="101.0" layoutX="277.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/Download_on_the_App_Store_Badge.svg-removebg-preview.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+      <Label layoutX="684.0" layoutY="83.0" prefHeight="66.0" prefWidth="375.0" style="-fx-font-size: 25; -fx-font-weight: Bold;" text="Admin Page" />
+      <TableView fx:id="driverTable" layoutX="236.0" layoutY="153.0" prefHeight="233.0" prefWidth="1090.0">
+         <columns>
+            <TableColumn fx:id="driverID" prefWidth="106.6666259765625" text="Driver ID" />
+            <TableColumn fx:id="driverName" minWidth="0.0" prefWidth="221.59994506835938" text="Driver Name" />
+            <TableColumn fx:id="driverGender" prefWidth="120.7999267578125" text="Gender" />
+            <TableColumn fx:id="driverEmail" minWidth="0.0" prefWidth="276.79998779296875" text="Email" />
+            <TableColumn fx:id="driverNumber" prefWidth="196.0" text="Phone number" />
+            <TableColumn fx:id="driverDOB" prefWidth="164.5330810546875" text="DOB" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Label alignment="TOP_CENTER" layoutX="230.0" layoutY="117.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-font-size: 14;" text="Drivers logged in">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="227.0" layoutY="382.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-font-size: 14;" text="Users logged in">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="genderFilter" layoutX="1131.0" layoutY="120.0" onAction="#filterByGender" prefHeight="26.0" prefWidth="198.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="All" />
+                <String fx:value="Male" />
+                <String fx:value="Female" />
+            </FXCollections>
+        </items>
+       </ComboBox>
+      <TableView fx:id="userTable" layoutX="237.0" layoutY="417.0" prefHeight="237.0" prefWidth="1090.0">
+         <columns>
+            <TableColumn fx:id="userID" prefWidth="106.6666259765625" text="User ID" />
+            <TableColumn fx:id="userName" minWidth="0.0" prefWidth="221.59994506835938" text="User Name" />
+            <TableColumn fx:id="userGender" prefWidth="120.7999267578125" text="Gender" />
+            <TableColumn fx:id="userEmail" minWidth="0.0" prefWidth="276.79998779296875" text="Email" />
+            <TableColumn fx:id="userNumber" prefWidth="196.0" text="Phone number" />
+            <TableColumn fx:id="userDOB" prefWidth="164.5330810546875" text="DOB" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+    </children>
+</AnchorPane>
