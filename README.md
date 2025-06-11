@@ -1,0 +1,3 @@
+The Cab Booking System is a web-based platform that allows users to book rides easily, while drivers manage requests. It features user, driver, admin modules, secure login, ride history, and payment options, offering a seamless, efficient, and user-friendly booking experience.
+There is an issue with this project. It is that the entire thing was made to run locally. So the batabase and all the data associated with it was made and stored locally and not on an online server. So if u were to use the project, u would have to create our own databae on your system.
+We are novices still trying to understand the workings, so we ask for your apologyy for any inconvinience caused by this.
